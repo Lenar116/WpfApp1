@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Корзина" Height="600" Width="600" Background="CadetBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="g_header" Background="#C8D2D1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="g_catalog" FontWeight="Bold" Foreground="Black" Background="GhostWhite" Margin="5" FontSize="20" Grid.Column="0" Content="В каталог" Click="b_catalog_Click"/>
+            <Button x:Name="g_order" FontWeight="Bold" Foreground="Black" Background="GhostWhite" Margin="5" FontSize="20" Grid.Column="1" Content="Оформить заказ" Click="b_order_Click"/>
+        </Grid>
+        <StackPanel x:Name="sp_cart" Grid.Row="1"/>
+    </Grid>
+</Window>
+
